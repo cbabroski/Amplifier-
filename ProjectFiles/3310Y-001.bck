@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP POT
-D Potentionmeter
-K resistor variable
-$ENDCMP
-#
-#End Doc Library
