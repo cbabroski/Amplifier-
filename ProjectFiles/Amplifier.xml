@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/Chris/Amplifier/ProjectFiles/Amplifier.sch</source>
+    <date>Monday, March 06, 2017 'PMt' 04:02:16 PM</date>
+    <tool>Eeschema 4.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Amplifier.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R2">
+      <value>6.65k</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer Part Number">RC0805FR-076K65L</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">311-6.65KCRCT-ND</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58BDAE01</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <datasheet>http://www.bourns.com/docs/Product-Datasheets/3310.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Bourns Inc.</field>
+        <field name="Manufacturer Part Number">3310Y-001-103L</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">3310Y-001-103L-ND</field>
+      </fields>
+      <libsource lib="device" part="R_Variable"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58BDAE79</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="Voltage Rating">16V</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Manufacturer Part Number">CC0805KKX7R7BB105</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">311-1365-1-ND</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58BDAEC4</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TSV911ILT</value>
+      <fields>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Manufacturer Part Number">TSV911ILT</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">497-6000-1-ND</field>
+      </fields>
+      <libsource lib="linear" part="TSV911ILT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58BDD67E</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <datasheet>http://www.bourns.com/docs/Product-Datasheets/3310.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Bourns Inc.</field>
+        <field name="Manufacturer Part Number">3310Y-001-103L</field>
+        <field name="Vendor">Digi-Key</field>
+        <field name="Vendor Part Number">3310Y-001-103L-ND</field>
+      </fields>
+      <libsource lib="device" part="R_Variable"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58BDDEC9</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R_Variable">
+      <description>variable Resistor (Rheostat)</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Variable</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="linear" part="TSV911ILT">
+      <description>Op Amp in 5-pin package</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TSV911ILT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="V-" type="output"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="V+" type="output"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/Library/Application Support/kicad/library/device.lib</uri>
+    </library>
+    <library logical="linear">
+      <uri>/Library/Application Support/kicad/library/linear.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="C1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="2" name="Vin">
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="3" name="+5V">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="4" name="Vout">
+      <node ref="U1" pin="1"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="5" name="Net-(R2-Pad2)">
+      <node ref="U1" pin="4"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="6" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+  </nets>
+</export>
